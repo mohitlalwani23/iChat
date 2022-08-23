@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>i-chat realtime node socket.io Chat App</title>
+    <!-- defer means ur script will load in background and when your dom is ready it will execute so no need to keep this tag at bottom -->
+    <script defer src ="http://localhost:8000/socket.io/socket.io.js"></script>
+    <script defer src="./js//client.js"></script>
+    <link rel="stylesheet" href="css/stylesheet.css">
+</head>
+  <body>
+    <nav>
+        <img class="logo" src="logo.png" alt ="">
+        <h1>Welcome to i-chat</h1>
+    </nav>
+    <!-- will make empty cotainer first -->
+    <div class="container">
+        <!-- <div class="message right"> moht:  Hey How r uh?</div>
+        <div class="message left"> frnd:  i am fine what about uh?</div>
+        -->
+    </div>
+    <div class="send">
+        <form action="#" id="send-container">
+            <input type="text" name="messageInp" id="messageInp">
+            <button class="btn" type="submit"> send</button>
+        </form>
+    </div>
+
+  </body>
+</html>
